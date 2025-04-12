@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: #000000;
+    --color2: #146C94;
+    --color3: #19A7CE;
+    --color4: #0a8cf0;
+    --color5: #b9b9b9;
+    --color6: #F6F1F1;
+    --color7: #ffffff;
+    --color8: #b9b9b9a1;
+
+    --fuente1: 'Open Sans';
+    --fuente2: 'Poppins'; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--fuente1), var(--fuente2);
+    background-color: var(--color1);
+}
+
+#logo img{
+    width: 70px;
+}
+
+a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#topbar {
+    background-color: var(--color6);
+    color: var(--color1);
+    padding: 5px 0px;
+    font-size: 0.8em;
+}
+
+#topbar .fila{
+    justify-content: space-between;
+}
+
+
+#topbar a{
+    margin-right: 15px;
+}
+
+.fila {
+    display: flex;  /* Activa Flexbox */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.decorar-formulario {
+    background-color: var(--color7); 
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#formulario{
+    width: 100%;
+}
+
+.columna {
+    /* Establecer el mismo ancho para cada caja */
+    flex-basis: 0;
+    flex-grow: 1;
+
+    /* Espaciado entre columnas */
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.columna23 {
+    flex-basis: 23%;
+    max-width: 23%;
+}
+
+.campo-entrada{
+    width: 100%;
+    margin-bottom: 5px;
+    font: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
+}
+
+.espaciado {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.elementos-nav {
+    display: flex;
+}
+
+.elementos-nav p{
+    margin-right: 20px;
+}
+
+.nav-menu-link {
+    color: var(--color6);
+    margin: 5px;
+    padding: 12px;
+    border-radius: 20px;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-menu-link:hover {
+    background-color: var(--color1);
+    box-shadow: -0.5px 0.5px 5px var(--color5);
+    color: var(--color6);
+}
+
+.nav-menu {
+    list-style-type: none; /* Quita la viñeta */
+
+    display: flex;
+    flex-direction: row;
+}
+
+#logo{
+    padding: 20px 0px;
+    display: inline-block;
+}
+
+#nav{
+    background-color: var(--color1);
+}
+
+.ordenar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ajustar-video {
+    width: 100%;
+    max-height: 580px; 
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#extension-video {
+    position: relative;
+    background-color: var(--color1);
+    padding-bottom: 20px;
+}
+
+
+#extension-video-leyenda {
+    position: absolute;
+
+    width: 600px;
+    color: var(--color6);
+    text-align: center;
+    bottom: 100px;
+    left: calc(50% - 300px);
+
+    line-height: 0.8;
+}
+
+.columna50 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.columna33 {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+
+.columna22 {
+    flex-basis: 22%;
+    max-width: 22%;
+}
+
+#formulario .contenedor .fila-contactos .area2{
+    background-color: var(--color5);
+    color: var(--color7);
+    border-radius: 0px 6px 6px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+#formulario .contenedor .fila-contactos .area2 i{
+    font-size: 60px;
+    padding-right: 7px;
+}
+
+#formulario .contenedor .fila-contactos .area2 p{
+    padding-bottom: 20px;
+}
+
+
+
+.fila-contactos {
+    display: flex;  /* Activa Flexbox */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#formulario .formulario p{
+    font-size: 10px;
+}
+
+input::placeholder{
+    background-color: var(--color7);
+    text-decoration: none;
+}
+
+.campo-entrada:focus {
+    border-color: var(--color7);
+}
+
+.boton {
+    background-color: var(--color5);
+    color: var(--color6);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    font-weight: bolder;
+}
+
+.boton:hover {
+    background-color: var(--color1);
+    box-shadow: -0.5px 0.5px 5px var(--color1);
+    color: var(--color6);
+}
+
+#formulario .columna{
+    padding: 40px;
+}
+
+.empujar{
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+#manipular{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#extension-patinadores{
+    padding: 40px 0px;
+    padding-bottom: 150px;
+}
+
+#extension-patinadores .contenedor{
+    text-align: center;
+}
+
+#extension-patinadores .texto-patinadores{
+    margin-bottom: 50px;
+}
+
+#extension-patinadores .texto-patinadores p{
+    font-size: 14px;
+}
+
+#extension-patinadores .texto-patinadores h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+#extension-patinadores .contenedor .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+#extension-patinadores h2{
+    color: var(--color7);
+    text-decoration: underline;
+}
+
+#extension-patinadores h3{
+    color: var(--color7);
+}
+
+#extension-patinadores p{
+    color: var(--color7);
+    font-size: 14px;
+}
+
+
+.extension-patinadores-foto {
+    position: relative;
+    overflow: hidden;  /* Oculta todo aquello que desborde la caja */
+}
+
+/* Caja hijo */
+.extension-patinadores-leyenda {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color8);
+    color: var(--color1); 
+    padding-top: 70px;
+    text-align: center;
+    opacity: 0; /* Ocultar la caja */
+    transition: all 0.7s ease-in-out;
+    }
+    #extension-patinadores .contenedor .fila .columna .extension-patinadores-foto .extension-patinadores-leyenda p{
+        color: var(--color1);
+    }
+
+#extension-patinadores .columna:hover .extension-patinadores-leyenda {
+    opacity: 1; /* Pone visible la caja oculta */
+}
+
+#extension-patinadores .columna img {
+    width: 100%;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+#extension-patinadores .columna:hover img {
+    transform: scale(1.2);
+}
+
+#extension-patinadores .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fila-contactos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+
+#cincuenta .columna50 i {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cincuenta .columna50 p {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.columna75 {
+    flex-basis: 75%;
+    max-width: 75%;
+    
+}
+
+.columna25 {
+    flex-basis: 25%;
+    max-width: 25%;
+    display: flex;
+    justify-content: start;
+}
+
+.resaltado1{
+    color: var(--color1);
+}
+.resaltado2{
+    font-size: 18px;
+}
+
+.resaltado3{
+    font-size: 12px;
+}
+
+.negrita{
+    font-weight: bolder;
+}
